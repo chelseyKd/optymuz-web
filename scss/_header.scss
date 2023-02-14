@@ -1,0 +1,27 @@
+
+.header{
+    nav{
+        background-color: $terciaryC;
+        p{
+            font-family: $mainFont;
+            font-weight: $boldText;
+            font-size: $normiText;
+            color: $secondaryC-letter;
+            display: inline-block;                
+        }
+        a{
+            font-family: $mainFont;
+            font-weight: $boldText;
+            font-size: $normiText;
+            color: $secondaryC-letter;
+            text-decoration: none;
+        }
+        button.btn{
+            font-family: $mainFont;
+        }
+    }        
+    section{
+        background-color: $mainColor;
+        padding: 4%;
+    }
+}

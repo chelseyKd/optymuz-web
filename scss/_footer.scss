@@ -1,0 +1,37 @@
+
+.footer{
+    background-color: $mainColor;
+    div{
+        display: inline-block;
+        margin-right: 100px;
+        a,p{
+            font-family: $mainFont;
+            font-weight: $mediumText;
+            font-size: $normiText;
+            color: $mainC-letter;
+            
+        }
+        h5{
+            font-family: $mainFont;
+            font-weight: $xlightText;
+            font-size: $smText;
+            color: $mainC-letter;
+        }
+        img.me-2{
+            width: 45px;
+            height: 45px;    
+        }
+    }
+}
+
+//responsive-mobile
+footer{
+    @include responsive(mobile){
+        display: flex;
+        flex-direction: column;
+        img.mt-3{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

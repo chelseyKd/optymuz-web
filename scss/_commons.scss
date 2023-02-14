@@ -1,0 +1,79 @@
+
+    //etiquetas
+h1{
+    color: $mainC-letter;
+    font-family: $mainFont;
+    font-weight: $mediumText;
+    font-size: $xxlText;
+    text-align: center;
+    @include responsive(mobile){
+        font-size: $lgText2;
+        text-align: center;
+    }
+}
+
+p{
+    font-family: $mainFont;
+    font-weight: $regularText;
+    font-size: $normiText;
+}
+
+    //clases
+//text
+.thinTitle{
+    font-family: $mainFont;
+    font-weight: $xlightText;
+    font-size: $mdText2;
+}
+
+.emphasisText{
+    font-family: $mainFont;
+    font-weight: $mediumText;
+    font-size: $xlText;
+}
+
+.boldTitle-2{
+    font-family: $mainFont;
+    font-weight: $mediumText;
+    font-size: $mdText;
+}
+
+.thinTitle-4{
+    font-family: $mainFont;
+    font-weight: $thinText;
+    font-size: $lgText;
+}
+
+#inicioText{
+    font-family: $mainFont;
+    color: $secondaryC;
+}
+
+//buttons
+.btn_Kd{
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2px;
+    font-family: $mainFont;
+    font-weight: $lightText;
+    font-size: $normiText;
+    text-decoration: none;
+}
+
+.btnNaranja_Kd{
+    @extend .btn_Kd;
+    border-color: $contrastC;
+    padding: 10px 80px;
+    color: $contrastC;
+    &:hover{
+        background-color: $contrastC;
+        color: $mainC-letter;
+        transition-delay: 150ms;
+    }
+}
+
+//others
+.block{
+    display: block;
+    text-decoration: none;
+}
