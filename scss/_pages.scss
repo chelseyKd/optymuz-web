@@ -11,3 +11,154 @@
         font-size: $normiText;
     }
 }
+
+//contacto
+#contacto{
+    h2{
+        text-align: center;
+        @include responsive(mobile){
+            font-size: $mdText2;
+        }
+    }
+    p{
+        text-align: center;
+        @include responsive(mobile){
+            font-size: $mdText;
+        }
+    }
+    form{
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 6px;
+        border-color: $lineC;
+        width: 710px;
+        height: auto;
+        margin: 0 auto;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        @include responsive(mobile){
+            width: 348px;
+        }
+        div{
+            margin: 0 auto;
+            label{
+                font-family: $mainFont;
+                font-weight: $lightText;
+                font-size: $normiText;
+            }
+            input{
+                border-style: solid;
+                border-radius: 3px;
+                border-color: $lineC;
+                width: 435px;
+                height: 40px;
+                @include responsive(mobile){
+                    width: 308px;
+                }
+            }
+            textarea{
+                border-style: solid;
+                border-radius: 3px;
+                border-color: $lineC;
+                width: 435px;
+                @include responsive(mobile){
+                    width: 308px;
+                } 
+            }
+        }    
+    }     
+}
+
+//casos-exito
+#casosExito{
+    section{
+        display: flex;
+        flex-direction: row;
+        padding: 5%;
+        @include responsive(mobile){
+            .grid-casos{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5,1fr);
+                grid-template-areas: 
+                "title"
+                "texto"
+                "video"
+                "subtitulo"
+                "btn";
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3,a{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        div{
+            margin: 2%;
+            h2{
+                @include responsive(mobile){
+                    font-size: $mdText2;
+                }
+            }
+            video{
+                width: 450px;
+                height: 280px;
+                border-radius: 12px;
+                @include responsive(mobile){
+                    width: 100%;
+                    height: auto;
+
+                }
+            }
+        }
+    }
+}
+
+.grid-casos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "title"
+    "texto"
+    "video"
+    "subtitulo"
+    "btn";
+}
+
+.gridTitle{
+    grid-area: title;
+}
+.gridText{
+    grid-area: texto;
+}
+.gridVideo{
+    grid-area: video;
+}
+.gridSubtitle{
+    grid-area: subtitulo;
+}
+.gridBtn{
+    grid-area: btn;
+}
+
+//index
+.inicio{
+    section{
+        display: flex;
+        flex-direction: row;
+        padding: 5%;
+        div{
+            margin: 2%;
+            img{
+                width: auto;
+                height: auto;
+                border-radius: 12px;
+            }
+        }
+    }
+}

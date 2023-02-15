@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700&display=swap");
+.w100_Kd {
+  width: 100%;
+}
+
+.w30_Kd {
+  width: 30%;
+}
+
 h1 {
   color: #FFFFFF;
   font-family: "Inter", sans-serif;
@@ -48,7 +56,7 @@ p {
   color: #8ED7C2;
 }
 
-.btn_Kd, .btnNaranja_Kd {
+.btn_Kd, .btnGreen_Kd, .btnNar-sm_Kd, .btnNaranja_Kd {
   border-style: solid;
   border-radius: 6px;
   border-width: 2px;
@@ -67,6 +75,22 @@ p {
   background-color: #FFA17A;
   color: #FFFFFF;
   transition-delay: 150ms;
+}
+
+.btnNar-sm_Kd {
+  border-color: #FFA17A;
+  padding: 10px 60px;
+  color: #FFA17A;
+}
+.btnNar-sm_Kd:hover {
+  background-color: #FFA17A;
+  color: #FFFFFF;
+  transition-delay: 150ms;
+}
+
+.btnGreen_Kd {
+  background-color: #1A5257;
+  color: #FFFFFF;
 }
 
 .block {
@@ -142,4 +166,153 @@ p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.125em;
+}
+
+#contacto h2 {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  #contacto h2 {
+    font-size: 1.375em;
+  }
+}
+#contacto p {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  #contacto p {
+    font-size: 1.25em;
+  }
+}
+#contacto form {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 6px;
+  border-color: #D9D9D9;
+  width: 710px;
+  height: auto;
+  margin: 0 auto;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  #contacto form {
+    width: 348px;
+  }
+}
+#contacto form div {
+  margin: 0 auto;
+}
+#contacto form div label {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1.125em;
+}
+#contacto form div input {
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #D9D9D9;
+  width: 435px;
+  height: 40px;
+}
+@media (max-width: 991px) {
+  #contacto form div input {
+    width: 308px;
+  }
+}
+#contacto form div textarea {
+  border-style: solid;
+  border-radius: 3px;
+  border-color: #D9D9D9;
+  width: 435px;
+}
+@media (max-width: 991px) {
+  #contacto form div textarea {
+    width: 308px;
+  }
+}
+
+#casosExito section {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+@media (max-width: 991px) {
+  #casosExito section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #casosExito section .grid-casos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "title" "texto" "video" "subtitulo" "btn";
+  }
+  #casosExito section h3, #casosExito section a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+#casosExito section div {
+  margin: 2%;
+}
+@media (max-width: 991px) {
+  #casosExito section div h2 {
+    font-size: 1.375em;
+  }
+}
+#casosExito section div video {
+  width: 450px;
+  height: 280px;
+  border-radius: 12px;
+}
+@media (max-width: 991px) {
+  #casosExito section div video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.grid-casos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "title" "texto" "video" "subtitulo" "btn";
+}
+
+.gridTitle {
+  grid-area: title;
+}
+
+.gridText {
+  grid-area: texto;
+}
+
+.gridVideo {
+  grid-area: video;
+}
+
+.gridSubtitle {
+  grid-area: subtitulo;
+}
+
+.gridBtn {
+  grid-area: btn;
+}
+
+.inicio section {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+.inicio section div {
+  margin: 2%;
+}
+.inicio section div img {
+  width: auto;
+  height: auto;
+  border-radius: 12px;
 }/*# sourceMappingURL=main.css.map */

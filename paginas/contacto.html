@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <!--header-->
     <header class="header">
         <!--navbar-->
         <nav class="navbar navbar-expand-lg bg-aqua_Kd">
@@ -47,54 +48,75 @@
             <h1>Contáctanos</h1>
         </section>
     </header>
-    <main>    
-        <section>
+    <!--header ends-->
+    <!--main-->
+    <main id="contacto" class="mt-5">
+        <!--form escríbenos-->    
+        <section class="mb-5">
             <h2 class="emphasisText">Escríbenos</h2>
             <p>Atendemos a todas tus dudas o comentarios</p>
             <form action="">
                 <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name">
-                </div>
-                <div>
-                    <label for="mail">Correo</label>
-                    <input type="text" id="mail">
-                </div>
-                <div>
-                    <label for="msg">Mensaje</label>
-                </div>
-                    <textarea name="" id="msg" cols="30" rows="10"></textarea>
-                <div>
-                    <input type="submit" value="Enviar">
+                    <div class="mb-3">
+                        <label class="mb-2" for="name">Nombre</label>
+                        <br>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="mb-2" for="mail">Correo</label>
+                        <br>
+                        <input type="text" id="mail">
+                    </div>
+                    <div>
+                        <label class="mb-2" for="msg">Mensaje</label>
+                        <br>
+                    </div>
+                        <textarea name="" id="msg" cols="30" rows="10"></textarea>
+                    <div>
+                        <input class="btnGreen_Kd mt-2" type="submit" value="Enviar">
+                    </div>
                 </div>
             </form>
         </section>
-        <section>
+        <!--form escríbenos ends-->
+        <!--form visítanos-->
+        <section class="mb-5">
             <h2 class="emphasisText">Visítanos</h2>
             <p>Acordemos una cita, será un gusto recibirte</p>
             <form action="">
                 <div>
-                    <label for="name2">Nombre</label>
-                    <input type="text" id="name2">
-                </div>
-                <div>
-                    <label for="hour">Fecha y hora</label>
-                    <input type="datetime-local" id="hour">
-                </div>
-                <div>
-                    <label for="msg2">Motivo de visita</label>
-                </div>    
-                    <textarea name="" id="msg2" cols="30" rows="10"></textarea>
-                <div>
-                    <input type="submit" value="Enviar">
+                    <div class="mb-3">
+                        <label class="mb-2" for="name2">Nombre</label>
+                        <br>
+                        <input type="text" id="name2">
+                    </div>
+                    <div class="mb-3">
+                        <label class="mb-2" for="hour">Fecha y hora</label>
+                        <br>
+                        <input type="datetime-local" id="hour">
+                    </div>
+                    <div>
+                        <label class="mb-2" for="msg2">Motivo de visita</label>
+                        <br>
+                    </div>    
+                        <textarea name="" id="msg2" cols="30" rows="10"></textarea>
+                    <div>
+                        <input class="btnGreen_Kd mt-2" type="submit" value="Enviar">
+                    </div>
                 </div>
             </form>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14577.572630160968!2d-104.6811759223123!3d24.01719720960994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bc813585b3e7f%3A0x88bde738d74c2383!2sTORRE%20VI!5e0!3m2!1ses!2smx!4v1673228109607!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="d-flex justify-content-center mt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14577.572630160968!2d-104.6811759223123!3d24.01719720960994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bc813585b3e7f%3A0x88bde738d74c2383!2sTORRE%20VI!5e0!3m2!1ses!2smx!4v1673228109607!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
+        <!--form visítanos ends-->
     </main>
-    <aside>
-        <a href="#">Necesito soporte</a>
+    <!--main ends-->
+    <!--aside-->
+    <aside class="d-flex justify-content-center mb-4">
+        <a class="btnNaranja_Kd" href="#">Necesito soporte</a>
     </aside>
+    <!--aside ends-->
     <!--footer-->
     <footer class="footer d-flex justify-content-between ps-3">
         <a href="../index.html">

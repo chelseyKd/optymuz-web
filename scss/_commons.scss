@@ -72,6 +72,25 @@ p{
     }
 }
 
+.btnNar-sm_Kd{
+    @extend .btn_Kd;
+    border-color: $contrastC;
+    padding: 10px 60px;
+    color: $contrastC;
+    &:hover{
+        background-color: $contrastC;
+        color: $mainC-letter;
+        transition-delay: 150ms;
+    }
+}
+
+.btnGreen_Kd{
+    @extend .btn_Kd;
+    background-color: $fourthC;
+    color: $mainC-letter;
+}
+
+
 //others
 .block{
     display: block;
