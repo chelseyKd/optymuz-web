@@ -6,11 +6,13 @@
         height: 90px;
     }
     li{
+        margin: 0 auto;
         font-family: $mainFont;
         font-weight: $regularText;
         font-size: $normiText;
     }
 }
+
 
 //contacto
 #contacto{
@@ -76,27 +78,6 @@
         display: flex;
         flex-direction: row;
         padding: 5%;
-        @include responsive(mobile){
-            .grid-casos{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(5,1fr);
-                grid-template-areas: 
-                "title"
-                "texto"
-                "video"
-                "subtitulo"
-                "btn";
-            }
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h3,a{
-                text-align: center;
-                display: flex;
-                justify-content: center;
-            }
-        }
         div{
             margin: 2%;
             h2{
@@ -115,39 +96,28 @@
                 }
             }
         }
+        @include responsive(mobile){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3,a{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+            div.video{
+                order: 1;
+            }
+            div.text{
+                order: 2;
+            }
+        }
     }
 }
 
-.grid-casos{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
-    grid-template-areas: 
-    "title"
-    "texto"
-    "video"
-    "subtitulo"
-    "btn";
-}
-
-.gridTitle{
-    grid-area: title;
-}
-.gridText{
-    grid-area: texto;
-}
-.gridVideo{
-    grid-area: video;
-}
-.gridSubtitle{
-    grid-area: subtitulo;
-}
-.gridBtn{
-    grid-area: btn;
-}
 
 //index
-.inicio{
+#inicio{
     section{
         display: flex;
         flex-direction: row;
@@ -158,6 +128,54 @@
                 width: auto;
                 height: auto;
                 border-radius: 12px;
+                @include responsive(mobile){
+                    width: 260;
+                    height: 240;
+                }
+            }
+        }
+        @include responsive(mobile){
+            display: flex;
+            flex-direction: column;
+            div.text{
+                order: 1;
+            }
+            div.img{
+                order: 2;
+            }
+            h3{
+                font-size: $mdText2;
+            }
+        }
+    }
+    div.medida{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        a{
+            margin: 0 auto;
+        }
+        @include responsive(mobile){
+            h2{
+                font-size: $mdText2;
+            }
+        }
+    }
+}
+
+.format{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    div{
+        margin: 2%;
+        img{
+            width: auto;
+            height: auto;
+            border-radius: 12px;
+            @include responsive(mobile){
+                width: 260;
+                height: 240;
             }
         }
     }

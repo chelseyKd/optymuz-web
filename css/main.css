@@ -163,6 +163,7 @@ p {
   height: 90px;
 }
 #productos li {
+  margin: 0 auto;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.125em;
@@ -238,24 +239,6 @@ p {
   flex-direction: row;
   padding: 5%;
 }
-@media (max-width: 991px) {
-  #casosExito section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #casosExito section .grid-casos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "title" "texto" "video" "subtitulo" "btn";
-  }
-  #casosExito section h3, #casosExito section a {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-}
 #casosExito section div {
   margin: 2%;
 }
@@ -275,44 +258,89 @@ p {
     height: auto;
   }
 }
-
-.grid-casos {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: "title" "texto" "video" "subtitulo" "btn";
+@media (max-width: 991px) {
+  #casosExito section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #casosExito section h3, #casosExito section a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  #casosExito section div.video {
+    order: 1;
+  }
+  #casosExito section div.text {
+    order: 2;
+  }
 }
 
-.gridTitle {
-  grid-area: title;
-}
-
-.gridText {
-  grid-area: texto;
-}
-
-.gridVideo {
-  grid-area: video;
-}
-
-.gridSubtitle {
-  grid-area: subtitulo;
-}
-
-.gridBtn {
-  grid-area: btn;
-}
-
-.inicio section {
+#inicio section {
   display: flex;
   flex-direction: row;
   padding: 5%;
 }
-.inicio section div {
+#inicio section div {
   margin: 2%;
 }
-.inicio section div img {
+#inicio section div img {
   width: auto;
   height: auto;
   border-radius: 12px;
+}
+@media (max-width: 991px) {
+  #inicio section div img {
+    width: 260;
+    height: 240;
+  }
+}
+@media (max-width: 991px) {
+  #inicio section {
+    display: flex;
+    flex-direction: column;
+  }
+  #inicio section div.text {
+    order: 1;
+  }
+  #inicio section div.img {
+    order: 2;
+  }
+  #inicio section h3 {
+    font-size: 1.375em;
+  }
+}
+#inicio div.medida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#inicio div.medida a {
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  #inicio div.medida h2 {
+    font-size: 1.375em;
+  }
+}
+
+.format {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+.format div {
+  margin: 2%;
+}
+.format div img {
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+@media (max-width: 991px) {
+  .format div img {
+    width: 260;
+    height: 240;
+  }
 }/*# sourceMappingURL=main.css.map */

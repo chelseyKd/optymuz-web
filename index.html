@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optymuz Desarrollo Web</title>
+    <meta name="author" content="Chelsy Reynoza">
     <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!--header-->
-    <header class="header inicio">
+    <header class="header">
         <!--navbar-->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -44,10 +45,10 @@
             </div>
         </nav>
         <!--navbar ends-->
-        <section>
+        <section class="format">
             <div>
                 <h1>Lleva tu negocio al siguiente nivel con esta sencilla y eficaz tecnología, todo en la palma de tu mano.</h1>
-                <p id="inicioText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quod facilis, exercitationem nesciunt aliquid libero reiciendis dolores, nihil repudiandae iusto rerum a incidunt. Laudantium odio qui totam esse velit nostrum.</p>
+                <p id="inicioText">Nuestra misión en optymus es entregarte software eficaz y de calidad para ayudarte en la organización o en la expansión de tu negocio. No importa si eres una gran corporación o un emprendedor despegando.</p>
             </div>
             <div>
                 <img src="imagenes/fotos/tech.png" alt="Mujer trabajando satisfecha en una computadora">
@@ -56,16 +57,15 @@
     </header>
     <!--header ends-->
     <!--main-->
-    <main class="inicio">
+    <main id="inicio">
         <!--section punto-venta-->
         <section>
-            <div>
+            <div class="img">
                 <img src="imagenes/fotos/point-sale.png" alt="Hombre mostrando software de la computadora a otro">
             </div>
-            <div>
+            <div class="text">
                 <h2 class="thinTitle">PUNTO DE VENTA</h2>
-                <h3 class="emphasisText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt, magnam laudantium consectetur tempore aliquid nisi excepturi amet, cumque labore numquam reprehenderit culpa qui consequatur. Itaque inventore odit illum eaque.</h3>
-                <p>Corrupti magnam voluptatibus accusamus blanditiis ab iure dolorem quisquam! Quisquam eum quia deleniti hic nam repellat perspiciatis inventore cupiditate a harum accusantium aperiam enim molestiae tempora voluptas praesentium, corrupti alias.</p>
+                <h3 class="emphasisText mb-4">Tendrás mayor control de los productos que entran y salen en cada uno de tus puntos de venta, podrás ver el volumen de todas tus ventas y darle un adecuado seguimiento a tus clientes.</h3>
                 <a class="btnNar-sm_Kd" href="#">Ver más</a>
             </div>
         </section>
@@ -74,8 +74,7 @@
         <section>
             <div>
                 <h2 class="thinTitle">ECOMMERCE</h2>
-                <h3 class="emphasisText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sunt, magnam laudantium consectetur tempore aliquid nisi excepturi amet, cumque labore numquam reprehenderit culpa qui consequatur. Itaque inventore odit illum eaque.</h3>
-                <p>Corrupti magnam voluptatibus accusamus blanditiis ab iure dolorem quisquam! Quisquam eum quia deleniti hic nam repellat perspiciatis inventore cupiditate a harum accusantium aperiam enim molestiae tempora voluptas praesentium, corrupti alias.</p>
+                <h3 class="emphasisText mb-4">Tendrás la valiosa oportunidad de ofrecer tus productos y servicios a un mayor número de clientes potenciales. Elevando así tu volumen de ventas, tu posicionamiento y tu impacto.</h3>
                 <a class="btnNar-sm_Kd" href="#">Ver más</a>
             </div>
             <div>
@@ -83,10 +82,12 @@
             </div>
         </section>
         <!--section ecommerce ends-->
-        <div class="mb-5">
-            <h2 class="emphasisText text-center">Si tienes tu propia idea para un proyecto, cuéntanos lo que tienes en mente y nosotros lo realizamos, no hay límites.</h2>
+        <div class="medida mb-5">
+            <h2 class="emphasisText text-center mb-4">Si tienes tu propia idea para un proyecto, cuéntanos lo que tienes en mente y nosotros lo realizamos, no hay límites.</h2>
+            <a class="btnNar-sm_Kd" href="#">Contáctanos</a>
         </div>  
     </main>
+    <!--main ends-->
     <!--footer-->
     <footer class="footer d-flex justify-content-between ps-3">
         <a href="index.html">
